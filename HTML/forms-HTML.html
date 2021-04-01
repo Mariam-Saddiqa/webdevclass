@@ -1,22 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML-FORM</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/blog.css" />
+  </head>
+  <body>
+    <h1>CONNECT WITH US</h1>
+    <h2>NAME</h2>
+    <style>
+      input[type="text"] {
+        background-color: aquamarine;
+      }
+      input[type="password"] {
+        background-color: greenyellow;
+      }
+      input[type="submit"] {
+        background-color: lightblue;
+      }
+      input[type="number"] {
+        background-color: aquamarine;
+      }
+    </style>
+
     <form autocomplete="off" action="/post.php" method="POST">
-        <input type="text" name="username" placeholder="Enter Usser Name"/><br>
-        <input type="password" name="password" placeholder="Enter your password"/>
-        <input type="submit" value="send"/>
-        <input type="send it"> 
+      <input
+        type="text"
+        name="username"
+        placeholder="Enter Usser Name"
+      /><br /><br />
+      <h2>PASSWORD</h2>
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter your password"
+      />
+      <h2>EMAIL ADDRESS</h2>
+      <input type="text" name="email" placeholder="Enter your email" />
+      <h2>ADDRESS</h2>
+      <h3>STREET</h3>
+      <input type="text" name="street" placeholder="street name" />
+      <h3>HOUSE NO</h3>
+      <input type="number" name="housenumber" placeholder="house number" />
+      <h3>POST CODE</h3>
+      <input type="number" name="postcode" placeholder="postcode" />
+      
+      <h3>CITY</h3>
+      <input type="TEXT" name="cityname" placeholder="city" />
+      <input type="submit" value="send" />
+      <input type="submit" value="send it" />
     </form>
-    <div>
-        <span class="example">THIS IS DESCRIPTION</span></div>
-    <div> <span>THIS IS DESCRIPTION</span></div>   
     
-    
-</body>
+  </body>
 </html>
