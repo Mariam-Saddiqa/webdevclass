@@ -1,0 +1,20 @@
+body{
+
+    background: rgb(250, 214, 114);
+
+}
+.logo{
+    text-indent: -999999px;
+    background: url('logo.jpg');
+    width: 200px; 
+    height: 200px; 
+}
+.spring{
+    background: rgb(14, 97, 93);
+}
+.winter{
+    background: rgb(80, 76, 76);
+}
+.summer{
+    background: rgb(33, 71, 95);
+}
