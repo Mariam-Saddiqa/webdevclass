@@ -1,12 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORLD NEWS</title>
+    <script src="https://kit.fontawesome.com/d6cd296e17.js" crossorigin="anonymous"></script>
+    <style>
+         .head{
+             text-align: center;
+         }
+         h1{
+             color:white;
+             background-color: rgb(77, 2, 2);
+         }
+         #content{
+              
+              border: double black;
+              padding: 20px;
+              margin: 40px auto 20px;
+              max-width: 800px;
+        }
+        strong{
+            color: red;
+        }
+        aside{
+            float: right;
+            border-style: double;
+            width: fit-content;
+            padding: 4px;
+        }
+        a:visited{
+            color: goldenrod;
+            margin nav-left: 35px;
+            margin bottom: 10px
+        }
+        .news{
+            float: right;
+            margin-left: 35px;
+            margin-bottom: 10px;
+        }
+        video{
+            float: right;
+        }
+        .wrapper{
+            display: flex;
+            position: relative;
+        }
+        .wrapper .sidebar{
+            position: fixed;
+            width: 200px;
+            height: 100%;
+            background: #4b4276;
+            padding: 30px 0;
+        }
+        .wrapper .sidebar h2{
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .wrapper .sidebar ul li{
+            padding: 15px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0);
+            border-top: 1px solid rgba(225, 225, 225, 0.05);
+
+        }
+        .wrapper .sidebar ul li a{
+            color: #bdb8d7;
+            display: block;
+        }
+        .wrapper .sidebar ul li a .fas{
+            width: 25px;
+
+        }
+        .wrapper .sidebar ul li:hover {
+            background: #594f8d;
+
+        }
+        .wrapper .sidebar ul li:hover a{
+            color: #fff;
+        }
+    </style>
+  </head>
+  <body>
+    <header class="head">
+      <img src="world.png" width="15%" />
+      <h1>WORLD NEWS TV</h1>
     
-</body>
+    <hr />
+    <nav>
+      <a href="#"> HOME</a>
+      <a href="#">POLITICS</a>
+      <a href="#">ENTERTAINMENT</a>
+      <a href="#">LIVE</a>
+      <a href="#">CONTACT US</a>
+    </nav>
+    <hr />
+    <nav>
+      <a href="#">LIVE UPDATES</a>
+    </nav>
+</header>
+ <div class="wrapper">
+     <div class="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i>HOME</a></li>
+            <li><a href="#"><i class="fas fa-users"></i>USERS</a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i>ABOUT</a></li>
+            <li><a href="#"><i class="fas fa-blog"></i>BLOG</a></li>
+            <li><a href="#"><i class="fas fa-newspaper"></i>NEWS PAPER</a></li>
+            <li><a href="#"><i class="fas fa-tv"></i>LIVE TV</a></li>
+            
+        </ul> 
+     </div>
+     
+ </div>
+    <section id="content">
+      <header>
+        <h2><a href="#">CHOAS IN THE STREETS</a></h2>
+        <video src="CHOAS.mp4" type="video/mp4" controls muted></video>
+        <p>
+          Rioters attack police, looters hit businesses amid protest over Daunte
+          Wright death; dozens arrested
+        </p>
+        <p>
+          Minnesota authorities arrested about 40 people after rioters and
+          police clashed for a second night in Brooklyn Center, Minn.,
+          authorities said during a news conference early Tuesday. Hundreds
+          gathered outside the Brooklyn Center Police Department Monday and
+          defied curfew. They demanded justice for Daunte Wright, a 20-year-old
+          Black man fatally shot by police during a traffic stop. The crowd
+          chanted "Daunte Wright!" Some shouted obscenities at officers.
+          Authorities fired tear gas, and flash-bang grenades into the crowd
+          after warning them that they were in violation of curfew. Some rioters
+          retaliated by throwing smoke canisters back toward law enforcement,
+          while others launched fireworks at the police lines, according to
+          reports. "Move back!" the police chanted. "Hands up! Don't shoot!" the
+          crowd chanted back. Authorities said officers were shelled "pretty
+          significantly," with objects thrown from the crowd. A few officers
+          were hit by debris and suffered minor injuries during the unrest,
+          police said.
+        </p>
+        <hr />
+        <img src="corona.jpg" width="50%" height="50%" class="news" />
+        <h2>
+          <a href="#">
+            CDC recommend pause of Johnson & Johnson vaccine over blood clot
+            cases</a
+          >
+        </h2>
+        <p>
+          The Food and Drug Administration together with the Centers for Disease
+          Control and Prevention (CDC) is recommending a pause in the rollout of
+          the Johnson & Johnson COVID-19 vaccine after several instances of a
+          severe blood clot in recipients. According to the FDA, there have been
+          six reported cases of the rare and severe type of blood clot in over
+          6.8 million Johnson & Johnson COVID-19 vaccine recipients.
+        </p>
+
+        <hr />
+        <img src="cop.jpg" width="50%" height="50%" class="news">
+        <h2>
+          <a href="#">
+            Minn. cop who shot 20-year-old man heard on bodycam during
+            incident</a
+          >
+        </h2>
+        <p>
+          The Minnesota cop who investigators say fired the shot in the death of
+          a 20-year-old Black man during a traffic stop Sunday afternoon has
+          been identified. The officer is Kimberly A. Potter, whose career with
+          the Brooklyn Center Police Department has spanned more than 25 years,
+          the Star Tribune reported. Potter, 48, is accused of fatally shooting
+          Daunte Wright. Brooklyn Center Police Chief Tim Gannon described the
+          shooting as "an accidental discharge," and said she had meant to fire
+          a Taser, not a handgun.
+        </p>
+        </header>
+      
+    </section>
+    <aside>
+        <h2>EXCLUSIVE CLIP</h2>
+        <section><a href="#">
+            <STRONG color="red">Gutfeld:</STRONG> None of anyone business whether FOX talent gets vaccinated</a></a></section><hr>
+        <section><a href="#"><strong>INGRAHAM ANGLE</strong> 
+            Ingraham: Corporate America wants to help Dems win permanent majority</a></section><hr>
+        <section><a href="#"><strong>GUTFELD</strong>  
+            Self-proclaimed BLM 'Marxist' buys up million-dollar properties</a></section><hr>
+        <section><a href="#"><strong>HANNITY</strong>
+            Hannity: Left keeps vilifying law enforcement despite rising crime</a></section><hr>
+        <section><a href="#"><strong> FOX NEWS @NIGHT</strong> 
+            Louisiana woman accused of refusing to return $1.2M after bank error</a></section>
+    </aside>
+    <div style="clear: both;"></div>
+    <footer>
+        &copy; COPYRIGHT 2021
+    </footer>
+  </body>
 </html>
