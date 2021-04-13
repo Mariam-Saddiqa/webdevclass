@@ -12,7 +12,7 @@
          }
          h1{
              color:white;
-             background-color: rgb(77, 2, 2);
+             background-color: rgb(32, 8, 165);
          }
          #content{
               
@@ -43,44 +43,87 @@
         video{
             float: right;
         }
-        .wrapper{
-            display: flex;
-            position: relative;
+        .main{
+            display:flex;
+            position: relative;4
+            margin:;
+            
         }
-        .wrapper .sidebar{
-            position: fixed;
+        .main .sidebar{
+            position: relative;
             width: 200px;
             height: 100%;
-            background: #4b4276;
+            background: #f003f8;
             padding: 30px 0;
         }
-        .wrapper .sidebar h2{
+        .main .sidebar h2{
             color: white;
             text-transform: uppercase;
             text-align: center;
             margin-bottom: 30px;
         }
-        .wrapper .sidebar ul li{
+        .main .sidebar ul li{
             padding: 15px;
             border-bottom: 1px solid rgba(0, 0, 0, 0);
             border-top: 1px solid rgba(225, 225, 225, 0.05);
 
         }
-        .wrapper .sidebar ul li a{
-            color: #bdb8d7;
+        .main .sidebar ul li a{
+            color: #ffffff;
             display: block;
         }
-        .wrapper .sidebar ul li a .fas{
+        .main .sidebar ul li a .fas{
             width: 25px;
 
         }
-        .wrapper .sidebar ul li:hover {
-            background: #594f8d;
+        .main .sidebar ul li:hover {
+            background: #cfced3;
 
         }
-        .wrapper .sidebar ul li:hover a{
+        .main .sidebar ul li:hover a{
             color: #fff;
+            color: black;
         }
+        .topnav{
+        background-color: rgb(248, 3, 248);
+       overflow: hidden;
+      }
+      .topnav a{
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration:  none;
+        font-size: 17px;
+      }
+      .topnav a:hover{
+        background-color: #ddd;
+        color: black;
+      }
+      .topnav a.active{
+        background-color: #4caf50;
+        color: white;
+      }
+       .socialmedia{
+          position:relative ;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+      }
+       .socialmedia a{
+          display: block;
+          width: 40px;
+          background: rgb(133, 3, 105);
+          height: 40px;
+          line-height: 40px;
+          text-align: center ;
+          margin: 5px 5px;
+          color: white;
+          border-bottom-right-radius: px;
+          border-top-left-radius: px;
+      }
+
     </style>
   </head>
   <body>
@@ -89,19 +132,21 @@
       <h1>WORLD NEWS TV</h1>
     
     <hr />
+    <div class="topnav">
     <nav>
-      <a href="#"> HOME</a>
+      <a class="active" href="#"> HOME</a>
       <a href="#">POLITICS</a>
       <a href="#">ENTERTAINMENT</a>
       <a href="#">LIVE</a>
       <a href="#">CONTACT US</a>
-    </nav>
-    <hr />
-    <nav>
       <a href="#">LIVE UPDATES</a>
     </nav>
+
+</div>
+    <hr />
+    
 </header>
- <div class="wrapper">
+ <div class="main">
      <div class="sidebar">
         <h2>Sidebar</h2>
         <ul>
@@ -113,9 +158,12 @@
             <li><a href="#"><i class="fas fa-tv"></i>LIVE TV</a></li>
             
         </ul> 
+     
+     
      </div>
      
- </div>
+     
+ 
     <section id="content">
       <header>
         <h2><a href="#">CHOAS IN THE STREETS</a></h2>
@@ -193,6 +241,14 @@
         <section><a href="#"><strong> FOX NEWS @NIGHT</strong> 
             Louisiana woman accused of refusing to return $1.2M after bank error</a></section>
     </aside>
+</div>
+    <div class="socialmedia">
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+     </div>
     <div style="clear: both;"></div>
     <footer>
         &copy; COPYRIGHT 2021
