@@ -18,11 +18,18 @@
               
               border: double black;
               padding: 20px;
-              margin: 40px auto 20px;
+              margin:0px 20px;
               max-width: 800px;
         }
         strong{
             color: red;
+            
+        }
+        .logo .head{
+            
+            background-image: url(world2.jpg);
+            padding: 50px 50px;
+            background-size: cover;
         }
         aside{
             float: right;
@@ -30,10 +37,14 @@
             width: fit-content;
             padding: 4px;
         }
+        .heading h2{
+            color: rgb(6, 6, 87);
+            text-decoration-line: underline;
+        }
         a:visited{
             color: goldenrod;
             margin nav-left: 35px;
-            margin bottom: 10px
+            margin bottom: 10px;
         }
         .news{
             float: right;
@@ -45,13 +56,13 @@
         }
         .main{
             display:flex;
-            position: relative;4
-            margin:;
+            position: relative;
+            
             
         }
         .main .sidebar{
-            position: relative;
-            width: 200px;
+            position:relative;
+            width: 220px;
             height: 100%;
             background: #f003f8;
             padding: 30px 0;
@@ -63,7 +74,7 @@
             margin-bottom: 30px;
         }
         .main .sidebar ul li{
-            padding: 15px;
+            padding: 12px;
             border-bottom: 1px solid rgba(0, 0, 0, 0);
             border-top: 1px solid rgba(225, 225, 225, 0.05);
 
@@ -127,11 +138,12 @@
     </style>
   </head>
   <body>
+      <div class="logo">
     <header class="head">
       <img src="world.png" width="15%" />
       <h1>WORLD NEWS TV</h1>
+    </div>
     
-    <hr />
     <div class="topnav">
     <nav>
       <a class="active" href="#"> HOME</a>
@@ -154,8 +166,8 @@
             <li><a href="#"><i class="fas fa-users"></i>USERS</a></li>
             <li><a href="#"><i class="fas fa-address-book"></i>ABOUT</a></li>
             <li><a href="#"><i class="fas fa-blog"></i>BLOG</a></li>
-            <li><a href="#"><i class="fas fa-newspaper"></i>NEWS PAPER</a></li>
-            <li><a href="#"><i class="fas fa-tv"></i>LIVE TV</a></li>
+            <li><a href="#"><i class="fas fa-newspaper"></i>NEWS</a></li>
+            <li><a href="#"><i class="fas fa-tv"></i>LIVE</a></li>
             
         </ul> 
      
@@ -229,7 +241,8 @@
       
     </section>
     <aside>
-        <h2>EXCLUSIVE CLIP</h2>
+        <div class="heading"><h2>EXCLUSIVE CLIP</h2></div>
+        
         <section><a href="#">
             <STRONG color="red">Gutfeld:</STRONG> None of anyone business whether FOX talent gets vaccinated</a></a></section><hr>
         <section><a href="#"><strong>INGRAHAM ANGLE</strong> 
