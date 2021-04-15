@@ -37,7 +37,8 @@ div > p{
 }
 /*Make all inputs have a 3px red border*/
 input{
-    border:red 3px ;
+    border-color:red;
+    border-width:3px ;
 }
 /*Make only inputs with type 'text' have a gray background*/
 [type="text"]{
