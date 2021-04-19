@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+#parent{
+    align-items: center;
+    background-color: teal;
+    padding: 1em;
+    display: flex;
+    
+   
+}
+#newdiv{
+    margin: 0 auto;
+    display: flex;
+}
+#child1{
+    background-color: yellow;
+    padding: 5em;
+    margin: 10px;
+ 
+   
+}
+#child2{
+    background-color: tomato;
+    padding: 5em;
+    margin: 10px;
+    
+
+}
+#child1 , #child2{
+    z-index: 0;
+}
+#child3{
+    background-color: yellowgreen;
+    padding: 6em;
+    position: absolute;
+    top: 10%;
+    left: 44%;
+    z-index: 980;
+}
+#child4{
+    padding: 3em;
+    background-color: turquoise;
+    position: absolute;
+    top: 13%;
+    left: 16%;
+}
