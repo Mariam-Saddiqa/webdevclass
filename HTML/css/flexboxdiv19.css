@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grandparent{
+    width: 100vw; height: 100vw; background-color: gray;
+}
+h1{
+    padding: 50px 0;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.parent{
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    background: cyan;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.child{
+    
+    height: 200px;
+    background: darkblue;
+    box-shadow: 0 0 20px darkgray;
+    flex: 1 1 200px;
+    margin: 20px;
+    
+    
+}
+.child:first-child{
+    background: tomato;
+}
+.child:last-child{
+    background: yellow;
+}
