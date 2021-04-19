@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+#wrapper{
+    display: flex;
+    padding: 1em;
+}
+#MOM{
+    
+    margin: 0 auto;
+    z-index: 0;
+}
+#b1{
+    background-color: rgb(46, 110, 60);
+    padding: 5em;
+    border:turquoise solid;
+}
+#b2{
+    background-color: turquoise;
+    padding: 5em;
+    position: absolute;
+    top: 8%;
+    left: 47%;
+    border:rgb(2, 245, 124) solid ;
+}
+#b3{
+    background-color: rgb(2, 245, 124);
+    padding: 5em;
+    position: absolute;
+    top: 12%;
+    left: 49%;
+    border:rgb(129, 241, 0) solid ;
+}
+#b4{
+    background-color: rgb(129, 241, 0);
+    padding: 5em;
+    position: absolute;
+    top:16%;
+    left:51%;
+    border:rgb(0, 247, 255) solid ;
+}
+#b5{
+    background-color: rgb(0, 247, 255);
+    padding: 5em;
+    position: absolute;
+    top: 20%;
+    left: 53%;
+    border: rgb(46, 110, 60) solid;
+}
+#parentbox{}
+   
+.child{
+    background-color: rosybrown;
+    padding: 3em;
+    border:2px solid brown ;
+box-sizing: border-box;
+    
+}
+@media(min-width:768px){
+    #parentbox{
+        display: flex;
+       
+    }
+
+
