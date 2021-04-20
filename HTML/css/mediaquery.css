@@ -26,6 +26,7 @@ body{
     box-shadow: 10px;
     box-shadow: 5px 5px 10px purple;
     animation: nature1 1s infinite;
+    
 }
 #wrapper .image2{
     
@@ -57,7 +58,8 @@ body{
 
 .container{
     margin: 0 auto;
-    width: 40%;
+    width: 15px;
+    padding: 5em;
 }
 .container img{
 
