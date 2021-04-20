@@ -50,7 +50,10 @@ body{
     left: 53%;
     border: rgb(46, 110, 60) solid;
 }
-#parentbox{}
+#parentbox{
+    display: flex;
+    justify-content: space-around;
+}
    
 .child{
     background-color: rosybrown;
