@@ -12,7 +12,7 @@ body{
     box-shadow: 5px 10px 10px black;
     text-align: center;
     font-size: 15px;
-    box-decoration-break: clone;
+    border-radius: 10px;
 }
 
 .container{
@@ -31,7 +31,7 @@ body{
 .container > .example{
     background-color: lightcoral;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 3;
     
 }
 .item:hover{
