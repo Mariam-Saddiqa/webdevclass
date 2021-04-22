@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    box-sizing: border-box;
+}
+.parent{
+    display: flex;
+}
+.div1{
+    background-color: hotpink;
+    border: solid darkgoldenrod;
+    float: left;
+    width: 25%;
+}
+.div2{
+    background-color: khaki;
+    border: solid darkcyan;
+    float: left;
+    width: 75%;
+}
+@media screen and (max-width:800px){
+    .div1{
+        background-color: darkgoldenrod;
+        font-size: 25px;
+        width: auto;
+        margin: 0;
+        float: none;
+        
+        
+        
+    }
+    .div2{
+        background-color: darkmagenta;
+        font-size: 25px;
+       width: auto;
+       margin: 0;
+       float: none;
+        
+        
+    }
+    .parent{
+        display: block;
+    }
+}
+@media screen and (max-width:500px){
+    .div1{
+        background-color: rgb(173, 184, 11);
+        font-size: 25px;
+        width: auto;
+        
+        
+        
+    }
+    .div2{
+        background-color: rgb(0, 118, 139);
+        font-size: 25px;
+       width: auto;
+        
+        
+    }
+    .parent{
+        display: block;
+    }
+}
