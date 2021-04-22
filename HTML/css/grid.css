@@ -22,19 +22,34 @@ body{
     grid-gap:1em;
     border:solid rgb(91, 156, 65) 5px;
     overflow: hidden;
-    
-
-    
-    
-
 }
-.container > .example{
+.container > .example1{
+    background-color:rgb(7, 245, 213) ;
+}
+.container > .example9{
+    background-color:rgb(252, 215, 7) ;
+}
+.container > .example3{
     background-color: lightcoral;
     grid-column-start: 1;
     grid-column-end: 3;
     
 }
+
+.container > .example4{
+    background-color: tomato;
+}
+.container > .example5{
+    background-color: yellow;
+}
+.container > .example6{
+    background-color:green ;
+}
+.container > .example8{
+    background-color:rgb(236, 10, 206) ;}
 .item:hover{
     background-color: orange;
     color: white;
+    font-family: cursive;
+    text-align: center;
 }
