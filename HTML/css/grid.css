@@ -1,20 +1,40 @@
 body{
     padding: 0;
-    margin: 0;
+    margin:100px auto;
     box-sizing: border-box;
+    text-align: center;
+   
+
 }
 .item{
-    padding: 1em;
+    padding: 2em;
     background-color: rgb(94, 235, 152);
+    box-shadow: 5px 10px 10px black;
+    text-align: center;
+    font-size: 15px;
+    box-decoration-break: clone;
 }
+
 .container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat();
-    grid-gap:1em
+    grid-gap:1em;
+    border:solid rgb(91, 156, 65) 5px;
+    overflow: hidden;
+    
+
+    
+    
+
 }
 .container > .example{
     background-color: lightcoral;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
+    
+}
+.item:hover{
+    background-color: orange;
+    color: white;
 }
