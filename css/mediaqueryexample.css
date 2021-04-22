@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+    
+}
+img{
+    width: 50%;
+    
+}
+.main{
+    display: flex
+
+}
+.main > .cat1 .cat2{
+    border: 10% solid black;
+}
+h1{
+    background-color: teal;
+}
+.pers{
+    display: flex;
+    background-color: turquoise;
+    padding: 5em;
+
+
+}
+.heilige{
+    display: flex;
+    background-color: yellow;
+    padding: 5em;
+}
+@media screen and (max-width: 500px){
+
+    .main{
+        display: block;
+    }
+    .cat1{
+        background-color: blueviolet;
+    }
+    .cat2{
+        background-color: cyan;
+    }
+    .heilige{
+        background-color: darkcyan;
+        text-align: center;
+        display: block;
+        
+    }
+    .pers{
+        background-color: darkgoldenrod;
+        text-align: center;
+        display: block
+        
+        
+    }
+
+}
+p{
+    margin-left: 20px;
+
+}
