@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source serif Pro' ;
+}
+.jumbotron{
+    background-image: url(../Assignment/images/clothing3.jpg);
+    background-size: cover;
+    height: 80vh;
+    background-position: center;
+    color: white;
+    border-radius: 0px!important;
+}
+.jumbotron{
+    margin: 30px 0;
+    font-size: 30px;
+    line-height: 1.5;
+}
+.intro{
+    padding-top: 160px;
+}
+.navbar-nav a{
+    margin: 0;
+    margin-top: 0 30px;
+}
+.nav-link:hover{
+    font-weight: 800;
+    border-bottom: 1px solid;
+    margin-bottom: -1px;
+}
+ .btn{
+    border: 1px solid white ;
+    margin-top:20px ;
+    padding:8px 26px ;
+    font-size: 16px;
+    color: white;
+}
+.form-inline{
+    align-items: center;
+}
+
+
+}
+#about{
+    position: relative;
+}
+#about h3{
+    font-size: 14px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+}
+#content .content-item{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+
+#content .content-item .content-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all ease-in-out 0.4s;
+}
+#content .content-item:hover .content-overlay{
+    opacity: 1; 
+}
+#content .content-item .content-overlay .content-info{
+    padding: 30em 0;
+}
+.content-info h1{
+    color: white;
+    margin: 0;
+}
+.content-info h3{
+    color: white;
+    margin-top: 0;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+#newsletter{
+    background: url(../Assignment/images/newsletter1.jpg) 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+#newsletter .btn:hover{
+
+    background-color: teal;
+}
+.form-control{
+    border: teal;
+    box-shadow: turquoise;
+    font-size: 18px;
+    margin-bottom: 22px;
+    margin-left: 18px;
+}
+.social-media:hover{
+    color:black;
+    
+    
+}
+
+.social-media{
+    display: flex;
+   
+}
