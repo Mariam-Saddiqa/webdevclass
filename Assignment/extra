@@ -18,3 +18,20 @@
           <span class="price">Price 19.99$</span>
         </div>
       </div>
+      image hover
+
+      .image1{
+    background-image: url(../Assignment/images/dress2.jpg);
+}
+.image1{
+    background-image: url(../Assignment/images/dress3.jpg);
+}
+.imghv{
+
+    opacity: 0;
+    transition-duration:1.25s ;
+}
+.imghv:hover{
+
+    opacity: 1;
+}  
