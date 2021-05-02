@@ -11,41 +11,75 @@
   </head>
   <body>
     <body>
-        <div class="container bg-dark text-white">
-          <p class="lead text-white my-5">Please Fill In!</p>
-          <hr class="bg-white" />
-          <form class="form-group">
-            <label for="">First Name</label>
-            <input type="text" class="form-control" id="name" />
-            <label for="">Last Name</label>
-            <input type="text" class="form-control" id="lname" />
-            <label for="">Enter Email</label>
-            <input type="email" class="form-control" id="email" />
-            <label>Enter Email Again</label>
-            <input type="email" class="form-control" id="emailagain" />
-            <label>Enter Password</label>
-            <input type="password" class="form-control" id="password" />
-            <label>Enter Password Again</label>
-            <input type="password" class="form-control" id="passwordagain" />
-            <p class="my-4">Gender</p>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optradio" />Male
-              </label>
+        <div class="container my-4 py-4" style="background-color: aquamarine;">
+            <h2 class=" lead display-4 text-center PY-3" style="font-family: 'Times New Roman', Times, serif;">LOG IN</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputName4">First Name</label>
+                  <input type="Text" class="form-control" id="inputname4" placeholder="First Name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputlastname4">Last Name</label>
+                  <input type="password" class="form-control" id="inputlastname4" placeholder="Last Name">
+                </div>
+              </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
             </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input
-                  type="radio"
-                  class="form-check-input"
-                  name="optradio"
-                />Female
-              </label>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
             </div>
-    
-            <button type="submit" class="btn btn-primary my-4">SUBMIT</button>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <select id="inputCity" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>TERNAT</option>
+                    <option>BRUSSEL</option>
+                    <option>HASSELT</option>
+                    <option>LIEDEKERK</option>
+                  </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>BELGIUM</option>
+                  <option>GRMANY</option>
+                  <option>PAKISTAN</option>
+                  <option>UNITED KINGDOM</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-secondary border-white align-justify-center">Sign in</button>
           </form>
         </div>
+           
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -53,3 +87,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+
+
+
+
+
