@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Cart</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../Assignment/cart.css">
+<script
+      src="https://kit.fontawesome.com/d6cd296e17.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d6cd296e17.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <a href="../Assignment/index.html" class="navbar-brand">EVOCH</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+  
+          <div
+            class="collapse navbar-collapse text-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../Assignment/index.html">HOME</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbardropdownmenulink"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  >SHOP</a
+                >
+                <div
+                  class="dropdown-menu text-center"
+                  aria-labelledby="navbardropdownmenu"
+                >
+                  <a class="dropdown-item" href="collection2.html">Kleding</a>
+                  <a class="dropdown-item" href="#">Accesories</a>
+                  <a class="dropdown-item" href="#">Out Wear</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Shoes</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SALE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CUSTOMER CARE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Assignment/login.html">LOG IN</a>
+              </li>
+              <li class="nav-item">
+                
+                  <a href="#" data-toggle="modal" data-target="#cartmodal"
+                    ><i class="fas fa-shopping-cart fa-2x text-light"></i
+                  ></a>
+                </li>
+                
+  
+              
+              </li>
+              <li class="nav-item">
+                <a href=""
+                  ><i
+                    class="fas fa-search fa-2x text-light"
+                    style="margin: 2px 20px"
+                  ></i
+                ></a>
+              
+            </ul>
+          </div>
+        </nav>
+         <!--cart modal-->
+         <div
+         class="modal fade"
+         
+         id="cartmodal"
+         
+       
+       >
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title">
+                 Your Shopping Cart
+               </h5>
+               <button
+                 type="button"
+                 class="close"
+                 data-dismiss="modal"
+                 
+               >
+               &times;
+               </button>
+             </div>
+             <div class="modal-body">
+               <p>Your Cart Is Empty!!</p>
+             </div>
+             <!--modal footer-->
+             <div class="modal-footer">
+               <button
+                 type="button"
+                 class="btn btn-secondary"
+                 data-dismiss="modal"
+               >
+                 Close
+               </button>
+             </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="container text-center top">
+          <h2 class="lead display-4 text-center py-5 pt-4 heading">Shopping Cart</h2>
+          <p class="lead text-center py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptates excepturi voluptatem hic quod,<br> nemo enim sapiente, officiis quae eum ad at eligendi cum perferendis quas iure unde? Laudantium, obcaecati.</p>
+      </div>
+      <!--cart table-->
+      <div class="mt-5">
+          <div class="container py-4">
+              <div class="table-responsive">
+                  <table class="table">
+                      <thead class="thead-dark">
+                          <tr>
+                              <th scope="col" class="text-white">Product</th>
+                              <th scope="col" class="text-white">Price</th>
+                              <th scope="col" class="text-white">Quantity</th>
+                              <th scope="col" class="text-white">Total</th>
+
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>
+                                  <div class="main">
+                                      <div class="d flex">
+                                          <img src="../Assignment/images/dress4.jpg" alt="" width="150" height="150">
+                                      </div>
+                                      <div class="des">
+                                          <p>Lorem ipsum</p>
+                                      </div>
+                                  </div>
+                              </td>
+                              <td>
+                                  <h6>$19.99</h6>
+                              </td>
+                              <td>
+                                  <div class="count">
+                                      <i class="fas fa-angle-down"></i>
+                                      <input type="text" class="input-number" value="1" min="0" max="20">
+                                      <i class="fas fa-angle-up"></i>
+                                    </div>
+                              </td>
+                              <td>
+                                  <h5>19.99$</h5>
+                              </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <div class="main">
+                                    <div class="d flex">
+                                        <img src="../Assignment/images/dress3.jpg" alt="" width="150" height="150">
+                                    </div>
+                                    <div class="des">
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <h6>$19.99</h6>
+                            </td>
+                            <td>
+                                <div class="count">
+                                    <i class="fas fa-angle-down"></i>
+                                    <input type="text" class="input-number" value="1" min="0" max="20">
+                                    <i class="fas fa-angle-up"></i>
+                                  </div>
+                            </td>
+                            <td>
+                                <h5>19.99$</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="main">
+                                    <div class="d flex">
+                                        <img src="../Assignment/images/dress2.jpg" alt="" width="150" height="150">
+                                    </div>
+                                    <div class="des">
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <h6>$19.99</h6>
+                            </td>
+                            <td>
+                                <div class="count">
+                                    <i class="fas fa-angle-down"></i>
+                                    <input type="text" class="input-number" value="1" min="0" max="20">
+                                    <i class="fas fa-angle-up"></i>
+                                  </div>
+                            </td>
+                            <td>
+                                <h5>19.99$</h5>
+                            </td>
+                        </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 offset-lg-4">
+          <div class="checkout">
+              <ul>
+                  <li class="subtotal">Subtotal
+<span>$58.99</span>
+                  </li>
+                  <li class="total">Total
+                    <span>$58.99</span>
+                                      </li>
+              </ul>
+              <a class="proceed-btn" href="#">Proceed to Checkout</a>
+          </div>
+      </div>
+
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

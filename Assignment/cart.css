@@ -1,0 +1,114 @@
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.heading{
+    margin-top: 40px;
+    font-weight: bold;
+}
+.top{
+    background-color:(14, 167, 238);
+
+
+}
+.cart.table{
+    margin-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+.cart.table thead tr th{
+    border-top: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 0px;
+}
+.cart.table thead tr td{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    vertical-align: middle;
+    align-self: center;
+}
+.cart.table tbody tr td .main .d-flex{
+    padding-right: 30px;
+}
+.cart.table tbody tr td .main .d-flex img{
+
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.cart.table tbody tr td .main .main .des{
+    vertical-align: middle;
+    align-self: center;
+}
+.cart.table tbody tr td .main .main .des p{
+    margin-bottom: 0px;
+}
+.cart.table tbody tr td h6{
+font-size: 16px;
+color: black;
+margin-bottom: 0px;
+}
+.cart.table tbody tr td .count{
+    margin-bottom: 0px;
+}
+.count i{
+    border: 1px solid black;
+    padding: 7px;
+    display: inline-block;
+    position: relative;
+}
+.cart.table tbody tr td .count input{
+    width: 100px;
+    padding-left: 30px;
+    height: 40px;
+    outline: none;
+    box-shadow:none;
+}
+.checkout ul{
+    border: 2px solid white;
+    background: whitesmoke;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+.checkout ul li{
+    list-style: none;
+    font-size: 1px;
+    font-weight: bold;
+    color: #252525;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.checkout ul li.subtotal{
+    font-weight:lighter;
+    font-size: large;
+    text-transform: capitalize;
+    border-bottom: 1px solid black;
+    padding-bottom: 14px;
+}
+.checkout ul li.subtotal span{
+    font-weight: bold;
+}
+.checkout ul li.total{
+    padding-top: 10px;
+    font-size: large;
+}
+.checkout ul li .total span{
+    color: teal;
+}
+.checkout ul li span{
+    float: right;
+}
+.checkout .proceed-btn{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+

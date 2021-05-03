@@ -15,14 +15,11 @@
     <script
       src="https://kit.fontawesome.com/d6cd296e17.js"
       crossorigin="anonymous"
-    >
-  </script>
-  <script
-  src="https://kit.fontawesome.com/d6cd296e17.js"
-  crossorigin="anonymous"
->
-</script>
-
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d6cd296e17.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Bootstrap CSS -->
     <link
@@ -36,7 +33,7 @@
   <body>
     <div class="container-fluid text-center">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a href="#" class="navbar-brand">EVOCH</a>
+        <a href="../Assignment/index.html" class="navbar-brand">EVOCH</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -48,7 +45,7 @@
         >
           <i class="fa fa-bars"></i>
         </button>
-        
+
         <div
           class="collapse navbar-collapse text-center"
           id="navbarSupportedContent"
@@ -91,17 +88,67 @@
               <a class="nav-link" href="../Assignment/login.html">LOG IN</a>
             </li>
             <li class="nav-item">
-              <a href=""><i class="fas fa-shopping-cart fa-2x text-light" style="margin-left: 2px 20px;"></i></a>
+              
+                <a href="../Assignment/cart.html" data-toggle="" data-target="#cartmodal"
+                  ><i class="fas fa-shopping-cart fa-2x text-light"></i
+                ></a>
+              </li>
+              
+
+            
             </li>
             <li class="nav-item">
-              <a href=""><i class="fas fa-search fa-2x text-light" style="margin: 2px 20px ;"></i></a>
-            </li>
+              <a href=""
+                ><i
+                  class="fas fa-search fa-2x text-light"
+                  style="margin: 2px 20px"
+                ></i
+              ></a>
             
           </ul>
         </div>
-        
       </nav>
+       <!--cart modal-->
+       <div
+       class="modal fade"
+       
+       id="cartmodal"
+       
+     
+     >
+       <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title">
+               Your Shopping Cart
+             </h5>
+             <button
+               type="button"
+               class="close"
+               data-dismiss="modal"
+               
+             >
+             &times;
+             </button>
+           </div>
+           <div class="modal-body">
+             <p>Your Cart Is Empty!!</p>
+           </div>
+           <!--modal footer-->
+           <div class="modal-footer">
+             <button
+               type="button"
+               class="btn btn-secondary"
+               data-dismiss="modal"
+             >
+               Close
+             </button>
+           </div>
+         </div>
+       </div>
+     </div>
     </div>
+
 
     <div class="jumbotron jumbotron-fluid bg-warning text-center">
       <div class="intro">
@@ -115,7 +162,7 @@
         <a class="btn btn-lg bg-info" href="#" role="button">Read More</a>
       </div>
       <!--Modal-->
-      <div class=" justify-content-center">
+      <div class="justify-content-center">
         <!--button for sign up-->
         <div class="text-center">
           <a
@@ -126,7 +173,6 @@
             >Sign Up<i class="fas fa-user-plus ml-3"></i
           ></a>
         </div>
-       
       </div>
       <!--sign up page content-->
       <div class="modal" id="signuppage">
@@ -145,22 +191,41 @@
                 &times;
               </button>
             </div>
-            <div class="modal-body  d-flex justify-content-center">
+            <div class="modal-body d-flex justify-content-center">
               <form>
                 <div class="form-group">
-                  <label class="text-dark"><i class="fas fa-user fa-1x"></i>Name</label>
-                  <input type="text" name="" class="name bg-light" placeholder="Name">
+                  <label class="text-dark"
+                    ><i class="fas fa-user fa-1x"></i>Name</label
+                  >
+                  <input
+                    type="text"
+                    name=""
+                    class="name bg-light"
+                    placeholder="Name"
+                  />
                 </div>
                 <div class="form-group">
-                  <label class="text-dark"><i class="fas fa-lock fa-1x"></i>Email</label>
-                  <input type="text" name="" class="email bg-light" placeholder="Email">
+                  <label class="text-dark"
+                    ><i class="fas fa-lock fa-1x"></i>Email</label
+                  >
+                  <input
+                    type="text"
+                    name=""
+                    class="email bg-light"
+                    placeholder="Email"
+                  />
                 </div>
                 <div class="form-group">
-                  <label class="text-dark"><i class="fas fa-envelope fa-1x"></i>Password</label>
-                  <input type="text" name="" class="password bg-light" placeholder="Password">
+                  <label class="text-dark"
+                    ><i class="fas fa-envelope fa-1x"></i>Password</label
+                  >
+                  <input
+                    type="text"
+                    name=""
+                    class="password bg-light"
+                    placeholder="Password"
+                  />
                 </div>
-
-
               </form>
             </div>
             <div class="modal-footer d-flex justify-content-center">
@@ -199,7 +264,12 @@
                     <h1>Our Summer Crush</h1>
                     <h3>Comfortable to wear this summer</h3>
                     <span>£ 15.19</span><br />
-                    <a class="btn btn-lg" href="../Assignment/collection2.html" role="button">Shop Nu</a>
+                    <a
+                      class="btn btn-lg"
+                      href="../Assignment/collection2.html"
+                      role="button"
+                      >Shop Nu</a
+                    >
                   </div>
                 </div>
               </a>
@@ -218,7 +288,12 @@
                     <h1>Our Winter Crush</h1>
                     <h3>Comfortable to wear this summer</h3>
                     <span>£ 15.19</span><br />
-                    <a class="btn btn-lg" href="../Assignment/collection2.html" role="button">Shop Nu</a>
+                    <a
+                      class="btn btn-lg"
+                      href="../Assignment/collection2.html"
+                      role="button"
+                      >Shop Nu</a
+                    >
                   </div>
                 </div>
               </a>
@@ -356,11 +431,31 @@
           <div class="col-md-5 col-sm-6">
             <h2>Winkelen</h2>
 
-            <p class="px-2"><a href="../Assignment/collection2.html" class="text-secondary">Dames</a></p>
-            <p class="px-2"><a href="../Assignment/collection2.html" class="text-secondary"> Heren</a></p>
-            <p class="px-2"><a href="../Assignment/collection2.html" class="text-secondary">Baby</a></p>
-            <p class="px-2"><a href="../Assignment/collection2.html" class="text-secondary">Kinderen</a></p>
-            <p class="px-2"><a href="../Assignment/collection2.html" class="text-secondary">Home</a></p>
+            <p class="px-2">
+              <a href="../Assignment/collection2.html" class="text-secondary"
+                >Dames</a
+              >
+            </p>
+            <p class="px-2">
+              <a href="../Assignment/collection2.html" class="text-secondary">
+                Heren</a
+              >
+            </p>
+            <p class="px-2">
+              <a href="../Assignment/collection2.html" class="text-secondary"
+                >Baby</a
+              >
+            </p>
+            <p class="px-2">
+              <a href="../Assignment/collection2.html" class="text-secondary"
+                >Kinderen</a
+              >
+            </p>
+            <p class="px-2">
+              <a href="../Assignment/collection2.html" class="text-secondary"
+                >Home</a
+              >
+            </p>
           </div>
           <div class="col-md-4 col-sm-6">
             <div class="footer-info">
@@ -427,3 +522,28 @@
     ></script>
   </body>
 </html>
+<i
+  class="fas fa-shopping-cart fa-2x text-light"
+  style="margin-left: 2px 20px"
+></i>
+
+<div class="modal" id="cartmodal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title text-center text-dark font-weight-bold"></h4>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="close"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="modal-body d-flex justify-content-center">
+        <p class="lead">Your Cart Is Empty!!</p>
+      </div>
+    </div>
+  </div>
+</div>
