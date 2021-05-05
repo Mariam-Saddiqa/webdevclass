@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding:0;
+    display: flex;
 }
 .div1{
     background-color: cadetblue;
@@ -41,11 +42,39 @@ body{
 
 }
 .div2{
+    width: 35%;
+    padding: 5px;
+    text-align: center;
+    margin: 50px;
+    border: 5px solid darkgreen;
+    background-repeat: ;
+    background-clip: content-box;
+    border-style: double;
+    
+
+
+    background-image: url(../HTML/images/flowerborder.jpg);
 
 }
 .head2{
+    padding: 5px;
+    margin: 25px;
+    font-size: 3vw;
+    font-family: Sofia;
+    text-decoration: underline aquamarine;
+    text-transform: uppercase;
+    font: small-caps;
     
+
+
 }
 .par2{
+    padding: 5px;
+    align-content: center;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  
 
 }
