@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.div1{
+    background-color: cadetblue;
+    padding: 25px;
+    margin: 50px;
+    border-style:solid ;
+    
+    border-color: yellowgreen;
+    border-radius: 30px;
+   
+    outline: 1px solid rgb(243, 4, 243);
+    outline-offset: 20px;
+    width: 20%;
+    
+}
+
+.par1{
+
+    margin:20px;
+    padding: 25px;
+    border-radius: 25px;
+    border-style: solid;
+    border:10px solid tomato;
+    background-color:rgb(226, 228, 224);
+    text-align: center;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    
+}
+.head1{
+
+    text-align: center;
+    border: 5px solid orangered;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: orchid;
+    
+
+}
+.div2{
+
+}
+.head2{
+    
+}
+.par2{
+
+}
