@@ -11,5 +11,7 @@ education:{
 }
 }
 
-let result="My name is " + objDataType.name + objDataType.LastName + ". I am "+objDataType.age+" old."
+let result="My name is " + objDataType.name + objDataType.LastName + ". I am "+objDataType.age+" old."+ "I am from "+objDataType.country
 console.log(result);
+let result2 = "I went to "+objDataType.education.school+". My college was "+objDataType.education.collage+". I did bachelors from "+objDataType.education.bachelors+"."
+console.log(result2);
