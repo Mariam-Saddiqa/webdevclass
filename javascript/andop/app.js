@@ -34,7 +34,7 @@ let objDataType = {
       console.log(`My partner name is ${objDataType.hobbies.husband.name}\nHe is ${objDataType.hobbies.husband.age}`);
       console.log(`I have two children ${objDataType.hobbies.husband.children.child1.name} and ${objDataType.hobbies.husband.children.child2.name}`);
       console.log(`They are ${objDataType.hobbies.husband.children.child1.age} year and ${objDataType.hobbies.husband.children.child2.age} old. `)
-    
+     return`Name : ${objDataType.name}, Last Name:${objDataType.LastName},\n Age: ${objDataType.age}`
   }
 }
 objDataType.printPersonInfo();
