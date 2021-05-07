@@ -6,7 +6,7 @@ let objDataType = {
   education: {
     school: "NJA",
     collage: "NJC",
-    bachelors: "university Sargodha",
+    bachelors: "university Sargodha"
   },
   hobbies: {
     activity: ["drawing", "reading", "movies"],
@@ -17,33 +17,26 @@ let objDataType = {
       children: {
         child1: {
           name: "Ayra",
-          age: "4",
+          age: "4"
         },
         child2: {
           name: "Zainab",
-          age: "4",
+          age: "11months"
         },
       },
     },
   },
-};
+  printPersonInfo: function () {
+      console.log('hello')
+      console.log(`My name is ${objDataType.name} ${objDataType.LastName}\nI am ${objDataType.age}\nI am from ${objDataType.country}`)
+      console.log(`My school was ${objDataType.education.school}\nMy collage was ${objDataType.education.collage}\nI went to ${objDataType.education.bachelors}`)
+      console.log(`I read ${objDataType.hobbies.books} books`);
+      console.log(`My partner name is ${objDataType.hobbies.husband.name}\nHe is ${objDataType.hobbies.husband.age}`);
+      console.log(`I have two children ${objDataType.hobbies.husband.children.child1.name} and ${objDataType.hobbies.husband.children.child2.name}`);
+      console.log(`They are ${objDataType.hobbies.husband.children.child1.age} year and ${objDataType.hobbies.husband.children.child2.age} old. `)
+    
+  }
+}
+objDataType.printPersonInfo();
 
-let result =
-  "My name is " +
-  objDataType.name +
-  objDataType.LastName +
-  ". I am " +
-  objDataType.age +
-  " old." +
-  "I am from " +
-  objDataType.country;
-console.log(result);
-let result2 =
-  "I went to " +
-  objDataType.education.school +
-  ". My college was " +
-  objDataType.education.collage +
-  ". I did bachelors from " +
-  objDataType.education.bachelors +
-  ".";
-console.log(result2);
+
