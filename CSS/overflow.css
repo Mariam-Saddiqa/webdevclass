@@ -1,0 +1,12 @@
+.overf{
+    background-color: aquamarine;
+    width: 200px;
+    height: 100px;
+    border: 5px solid black;
+    /*overflow: hidden;*/
+    /*overflow: visible;*/
+    /*overflow:scroll*/
+   /* overflow: auto;*/
+   overflow-y: auto;
+   overflow-x: auto;
+}
