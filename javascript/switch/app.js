@@ -24,8 +24,9 @@ function getDayName(dayNum){
             
     }
     return day;
+    
 }
-getDayName(2);
 
-document.write(getDayName(2))
+
+
 
