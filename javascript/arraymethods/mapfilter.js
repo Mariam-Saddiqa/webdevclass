@@ -23,7 +23,7 @@ let student = [
 result= student.filter(function(x){
     return x.score>=8
 })
-let newlist=student.map(function(value,index,array){
+let newlist=student.map(function(value){
     return value;
     
 })
