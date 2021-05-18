@@ -61,4 +61,4 @@ let doubleArray=array.reduce((total,value)=>{
 },[])
 console.log(doubleArray);
 
-//
+
