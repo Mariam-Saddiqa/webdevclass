@@ -1,0 +1,30 @@
+.float{
+    background-color: orange;
+    width: 500px;
+    height: 300px;
+    float: right;
+    overflow: scroll;
+    padding: 5px;
+    
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin-left: 5px;
+}
+img{
+    float: right;
+}
+.float1{
+    background-color:yellowgreen;
+    width: 500px;
+    height: 300px;
+    float: left;
+    overflow: scroll;
+    padding: 5px;
+    
+}
+.container{
+    padding: 50px;
+}
+
