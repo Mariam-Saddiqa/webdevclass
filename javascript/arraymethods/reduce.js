@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 let student = [
     {
       name: "Ayesha",
@@ -27,7 +27,7 @@ let student = [
       
       return total.score=+ current.score;
   })
-=======
+
 let numbers = [5, 6, 9, 10, 25];
 let sum = numbers.reduce(myReducefunction);
 
@@ -92,4 +92,3 @@ let doubleArray=array.reduce((total,value)=>{
 console.log(doubleArray);
 
 
->>>>>>> 69ceb3ea7ad875f2a5335e0c57a51fc2876fd508
