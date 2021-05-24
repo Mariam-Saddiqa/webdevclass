@@ -1,60 +1,73 @@
-let user=[];
+let user = [];
 
-user.push(new adduser());
+user.push(adduser(1, "mariam", "mariam@hotmail.be", 1233));
+user.push(adduser(2, "Jhon", "John@gmail.be", 1233));
+user.push(adduser(3, "Lalena", "Lalena@hotmail.be", 1233));
+user.push(adduser(4, "Marcio", "Marcio@hotmail.be", 1233));
+user.push(adduser(5, "Frank", "Frank@hotmail.be", 1233));
+
+function adduser(id, fullname, email, password) {
+  let obj = {
+    id: id,
+    fullname: fullname,
+    email: email,
+    password: password,
+  };
+  return obj;
+  
+}
+console.log(user)
 
 
 
-function adduser(id,fullname,email,password){
-    var i=0;
-    i=i+1;
-    let obj={
 
-        id:i,
-        fullname:fullname,
-        email:email,
-        password:password
+user.forEach(function getuser(user){
+    let id=user.id;
+    let fullname=user.fullname;
+    let email=user.email;
+    
+    console.log(`Id: ${id}\nFullname: ${fullname}\nEmail: ${email} `)
 
-    }
-    return obj;
+})
+
+
+
+
+
+
+
+
+function getSortedUsersByName(a,b) {
+     
+   
+  if ( a.fullname<b.fullname) {
+    return-1;
+  }
+  else if (a.fullname >b.fullname) {
+    return 1;
+  }else{
+  return 0;
+  }
+
 
 }
-
+user.sort(getSortedUsersByName)
 console.log(user);
 
-function getUser(){
 
- let x=console.log(toString(user));
- 
- 
 
-}
 
-let userarr=user.sort( function getSortedUsersByName(a,b) {
-    var nameA=a.fullnamename.toLowerCase();
- var nameB=b.fullname.toLowerCase;
- if(nameA<nameB){
-     return -1;
- }
-if(nameA>nameB){
-    return 1;
-}
-return 0;
+let obj=user.find(ser=>ser.fullname==="Jhon")
+console.log(obj)
 
-})
-console.log(userarr);
 
-let obJ=user.find(function getUserByName(name){
-    if(name=== user.fullname){
-        return obj;
-    };
-    
-})
-console.log(obJ)
+
 var id;
-    var index = user.map(function deleteUserById(x){
-        return x.Id;
-      }).indexOf(id);
-      
-      user.splice(index, 1);
-      console.log(user);
+var index = user
+  .map(function deleteUserById(x) {
+    return x.Id;
+  })
+  .indexOf(id);
 
+user.splice(index, 1);
+console.log(user)
