@@ -11,3 +11,10 @@ let student=[
      for(student of student){
          console.log(student)
      }
+
+
+
+
+
+
+     
