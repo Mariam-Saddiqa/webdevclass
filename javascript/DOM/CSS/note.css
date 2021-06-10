@@ -1,0 +1,42 @@
+.head{
+    text-align:center;
+    color:green;
+    margin:auto;
+    margin-top:5%
+    }
+  p{
+    text-align:center;
+      color:green;
+    margin:auto;
+    margin-top:3%;
+    font-size:25px;
+  }
+  .textfield{
+    text-align:center;}
+  .note{
+    display:inline-block;
+    
+    margin-left:17%
+  }
+  .textarea{
+    display:inline-block;
+    
+    padding:15px;
+    margin-right:24%;
+    width:50%;
+    margin-top:3%;
+    border-radius:5px
+      
+  }
+  textarea:focus {
+    border: 1px solid green;
+  }
+  .btn{
+    
+    margin-top:5%;
+    background-color:lightgreen;
+    padding:6px;
+    border-radius:10px;
+    border:solid 2px darkgreen;
+  }
+  
