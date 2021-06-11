@@ -1,0 +1,14 @@
+.container{
+    height: 100%;}
+.row{
+    position: relative;
+   }
+body,html {
+       height: 100%;
+     }
+   
+   .square{
+       width: 5% !important;
+       position: absolute;
+       transition: 1s height ease-in-out;
+   }
