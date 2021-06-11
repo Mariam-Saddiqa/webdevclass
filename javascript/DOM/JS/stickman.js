@@ -1,6 +1,6 @@
-var left = 0,
-    id = setInterval(goRight, 10); 
-    ed;
+var left = 0;
+var id = setInterval(goRight, 10); //execute code after every 10 miliseconds(function , time) 1000=1sec
+var ed;
 
 function goRight() {
     var stickman = document.getElementById("moving");
@@ -8,7 +8,7 @@ function goRight() {
     stickman.style.left = left + "px";
     stickman.style.transform='scaleX(-1)'
     if (left > 1200) {
-        clearInterval(id);
+        clearInterval(id);   //stops the execution of code
         ed = setInterval(goLeft, 10);
            
         
