@@ -10,11 +10,20 @@ var x=card.children[8];
 x.style.color="yellow";
 x.style.background="green";
 console.log(x)*/
-function addTodoList(){
-    
+var firstcardbody=document.querySelector('.cardbody')[0];
+var secondcardbody=document.querySelector('.cardbody')[1];
+
 var inputValue=document.getElementById('todo').value;
 var inputDate=document.getElementById('datepicker-input').value;
 var group=document.querySelector('.list-group');
+i.addEventListener("click", deleteItem)
+var button=document.getElementById('clear-todos')
+button.addEventListener('click', deleteTodo)
+firstcardbody.addEventListener("click",addTodoList)
+
+function addTodoList(){
+    
+
 
 var li=document.createElement('li');
 li.className="list-group-item";
@@ -25,7 +34,6 @@ a.href="#";
 var i=document.createElement('i');
 i.className="fa fa-remove";
 a.appendChild(i);
-i.addEventListener("click", deleteItem)
 li.appendChild(a);
 group.appendChild(li);
 }

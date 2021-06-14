@@ -20,7 +20,7 @@ function goLeft() {
     left -= 1;
     stickman.style.left = left + "px";
     stickman.style.transform='rotate(360deg)'
-    if (left < 1) {
+    if (left <= 1) {
         
         clearInterval(ed);
         id = setInterval(goRight, 10);

@@ -16,53 +16,74 @@
   <body>
     <body>
         
-    <div class="container">
+        <div class="container" style="margin-top:20px;">
 
-        <div class="card row">
-            <div class="card-header">T0D0L157</div>
-            <div class="card-body">
-                <form id="todo-form" name="form">
+            <div class="card row">
+                <div class="card-header">T0D0L157</div>
+                <div class="card-body">
+                    <form id="todo-form" name="form">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input class="form-control" name="todo" id="todo" autocomplete="off" value="this is static input value" placeholder="Enter a todo">
+                                <hr>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <div class="tui-datepicker-input tui-datetime-input tui-has-focus">
+                                    <input class="form-control" type="text" autocomplete="off" id="datepicker-input" aria-label="Date-Time">
+                                    <span class="tui-ico-date"></span>
+                                    <!-- <button type="submit" class="btn btn-danger findme">add todo</button> -->
+                                </div>
+                                <div id="wrapper" style="margin-top: -1px;"></div>
+    
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-danger">add todo</button>
+                        <hr>
+                    </form>
+    
+                </div>
+    
+                <div class="card-body">
+                    <p>i am the first</p>
+                    <p>hello </p>
+                    <hr>
+                    <h5 class="card-title" id="tasks-title">Todos</h5>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input class="form-control" name="todo" id="todo" placeholder="Enter a todo">
-                            <hr>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <div class="tui-datepicker-input tui-datetime-input tui-has-focus">
-                                <input class="form-control" type="text" id="datepicker-input" aria-label="Date-Time">
-                                <span class="tui-ico-date"></span>
-                                <!-- <button type="submit" class="btn btn-danger findme">add todo</button> -->
-                            </div>
-                            <div id="wrapper"></div>
-
+                            <input class="form-control" type="text" autocomplete="off" name="filter" id="filter" placeholder="Search a todo">
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-danger" onclick="addTodoList()">add todo</button>
+    
                     <hr>
-                </form>
-
-            </div>
-
-            <div class="card-body">
-                <hr>
-                <h5 class="card-title" id="tasks-title">Todos</h5>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <input class="form-control" type="text" name="filter" id="filter" placeholder="Search a todo">
-                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between"> <!--.parentElement -->
+                            My todo titleDELETE ME
+                            <a href="#" class="delete-item"> <!-- .parentElement -->
+                                <i class="fa fa-remove"></i> <!-- we are here -->
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            My todo title
+                            <a href="#" class="delete-item">
+                                <i class="fa fa-remove"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            My todo title
+                            <a href="#" class="delete-item">
+                                <i class="fa fa-remove"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <hr>
+                    <a id="clear-todos" class="btn btn-dark" href="#">Delete All Todos</a>
+                    <p>im the last </p>
                 </div>
-
-                <hr>
-                <ul class="list-group" id="list">
-                    
-                </ul>
-                <hr>
-                <a id="clear-todos" class="btn btn-dark" href="#" onclick="deleteTodo()">Delete All Todos</a>
             </div>
+    
         </div>
-
-    </div>
-
+    
         
     
         
