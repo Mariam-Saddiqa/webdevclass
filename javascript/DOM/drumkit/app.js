@@ -1,17 +1,18 @@
 //const keys=document.querySelector('keys');
-const key=document.querySelectorAll('.key');
-var playSound= function(){
-var attribute=this.getAttribute("data-key");
-console.log(attribute)
-var audio=document.getElementsByTagName('audio');
-for(i=0; i< audio.length; i++){
-audio[i].pause();
-audio[i].currentTime=0;
-
+let audio=document.querySelectorAll('audio');
+function playAudio(key){
+    audio.forEach(audio=>{
+        let audioKey=audio.getAttribute('data-key');
+        if(audioKey==key){
+            audio.play();
+        }
+    }
+        )
 }
-document.querySelectorAll('[data-key=attribute]').play();
-
-};
-for( var i=0; i< key.length; i++){
-    key[i].addEventListener('click',playSound , false);
-    }                                                               
+document.querySelectorAll('.key').forEach(btn=>{
+    let audioKey=btn.getAttribute('data-key');
+    btn.addEventListener('clcik',function(e){
+        console.log(e.target.parentElement)
+        playAudio(audioKey);
+    })
+})

@@ -1,68 +1,117 @@
-/*var btn=document.querySelector('button');
-btn.style.background='seagreen';
-btn.style.fontFamily='sans'
-btn.style.color="pink";
+const TodoInput = document.querySelector('#todo')
+const firstCardBody = document.querySelectorAll('.card-body')[0]
+const secondCardBody = document.querySelectorAll('.card-body')[1]
+const ListGroup = document.querySelector('.list-group')
 
-//document.querySelector('.card-body:nth-child(2)').style.background='yellow'
+const searchinput=document.querySelector('#filter');
 
-/*var card=document.querySelectorAll('.card-body')[1];
-var x=card.children[8];
-x.style.color="yellow";
-x.style.background="green";
-console.log(x)*/
-var firstcardbody=document.querySelector('.cardbody')[0];
-var secondcardbody=document.querySelector('.cardbody')[1];
+searchinput.addEventListener('keyup',function(e) {
+ const term=e.target.value.toLowerCase();
+ const li=ListGroup.getElementsByTagName('li');
+ Array.from(li).forEach(function(li){
+     const title=li.firstChild.textContent;
+     if(title.toLowerCase().indexOf(term)>-1){
+         li.style.display="block";
+     }else{
+         li.style.display="none";
+     }
+ })
+})
 
-var inputValue=document.getElementById('todo').value;
-var inputDate=document.getElementById('datepicker-input').value;
-var group=document.querySelector('.list-group');
-i.addEventListener("click", deleteItem)
-var button=document.getElementById('clear-todos')
-button.addEventListener('click', deleteTodo)
-firstcardbody.addEventListener("click",addTodoList)
-
-function addTodoList(){
-    
+// event listeners
+firstCardBody.addEventListener('click', AddTodo)
+secondCardBody.addEventListener('click',RemoveTodo)
 
 
-var li=document.createElement('li');
-li.className="list-group-item";
-li.textContent=inputValue+inputDate;
-var a=document.createElement('a');
-a.className="delete-item"
-a.href="#";
-var i=document.createElement('i');
-i.className="fa fa-remove";
-a.appendChild(i);
-li.appendChild(a);
-group.appendChild(li);
-}
 
-function deleteTodo(){
-    document.getElementById('list').innerHTML="";
-}
 function deleteItem(){
+
     document.querySelector('.list-group-item').remove();
+
 }
 
 
-/*
+function RemoveTodo(event){
+    event.preventDefault();
+    if(event.target.id == "clear-todos"){
+        console.log('this is all clear todos button')
+        ListGroup.innerHTML=""
+    }
 
-//var inputValue=document.getElementById('todo').value;
-//var inputDate=document.getElementById('datepicker-input').value;
-//var listItem=document.querySelector('.list-group-item');
+    if(event.target.className=="fa fa-remove"){
+        console.log(event.target.parentElement.parentElement) // remove()
+        event.target.parentElement.parentElement.remove();
+    }
+}
 
 
-function addTodoList(){
-    //
-    //var listItem=document.querySelector('.list-group-item');
-     var p=document.createElement('p');
-     var node=document.createTextNode(inputValue+inputDate);
-     p.appendChild(node);
-     var a = document.querySelector('.delete-item')
-    var parent=a.parentNode;
-    console.log(inputValue)
-     parent.insertBefore(p , a);//
-     
-}*/
+const generator = t => document.createElement(t)
 
+const MakeTodo = (title) => {
+    let li = generator('li')
+    li.className = "list-group-item d-flex justify-content-between"
+    let todoTitle = document.createTextNode(title)
+    li.appendChild(todoTitle)
+
+    let a = generator('a')
+    a.href="#"
+    a.className = "delete-item"
+
+    let i = generator('i')
+    i.className = "fa fa-remove"
+
+    a.appendChild(i)
+    li.appendChild(a)
+
+    return li
+
+}
+
+
+
+function AddTodo(event) {
+    event.preventDefault();
+    //console.log('hello add todo')
+    // console.log(event.target.className)
+    if (event.target.className == "btn btn-danger") {
+        if(TodoInput.value==""){
+            alertTodo();
+        }else
+  //      console.log('add todo click click')
+      //  console.log(TodoInput.value)
+     //   console.log(MakeTodo('this is a new todo'));
+        ListGroup.appendChild(MakeTodo(TodoInput.value))
+    }
+}
+
+//console.log(TodoInput.value, firstCardBody);
+
+
+// const myFunction = (a,b)=>{
+
+// }
+
+// const myFunction = a =>{
+
+// }
+
+// const myFunction = a => console.log(a)
+
+
+let datepicker = new tui.DatePicker('#wrapper',{
+    date: new Date(),
+    input:{
+        element:'#datepicker-input',
+        format:'yyyy-MM-dd'
+    }
+})
+function alertTodo(){
+    var alert=document.createElement('div');
+    alert.className="alert alert-danger";
+    var node=document.createTextNode("Input field is empty");
+    alert.appendChild(node)
+    firstCardBody.appendChild(alert);
+    setTimeout(function(){
+        alert.remove();
+    },2000)
+}
