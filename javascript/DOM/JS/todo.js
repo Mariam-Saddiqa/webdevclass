@@ -4,8 +4,25 @@ const secondCardBody = document.querySelectorAll('.card-body')[1]
 const ListGroup = document.querySelector('.list-group')
 
 const searchinput=document.querySelector('#filter');
+document.querySelector('#filter').addEventListener('keyup',FindTodo)
 
-searchinput.addEventListener('keyup',function(e) {
+ 
+
+function FindTodo(event) {
+    const filterValue = event.target.value.toLowerCase();
+    const listTodos = document.querySelectorAll('.list-group-item');
+    listTodos.forEach(function (todo) {
+        const todoTitle = todo.textContent.toLowerCase();
+        if (todoTitle.indexOf(filterValue) === -1) {
+            todo.setAttribute('style', 'display:none !important');
+        } else {
+            todo.setAttribute('style', 'display:block');
+        }
+
+    })
+}
+
+/*searchinput.addEventListener('keyup',function(e) {
  const term=e.target.value.toLowerCase();
  const li=ListGroup.getElementsByTagName('li');
  Array.from(li).forEach(function(li){
@@ -16,7 +33,7 @@ searchinput.addEventListener('keyup',function(e) {
          li.style.display="none";
      }
  })
-})
+})*/
 
 // event listeners
 firstCardBody.addEventListener('click', AddTodo)
