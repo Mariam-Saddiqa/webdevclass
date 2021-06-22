@@ -1,0 +1,11 @@
+.wrapper{
+    height: 100vh !important;
+}
+.left{
+    height: 100vh;
+}
+.right{
+    background-image: url('../images/abst.jpg');
+    background-size: cover;
+    background-position:100% ;
+}
