@@ -86,6 +86,7 @@ function addNewBook(){
 function deleteAllBook(event){
    
     table_body.innerHTML="";
+    index=0;
 
  
  }
