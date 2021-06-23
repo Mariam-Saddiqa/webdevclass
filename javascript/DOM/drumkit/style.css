@@ -46,7 +46,7 @@ html {
     padding-right: 0;
   }
   .playing {
-    transform: scale(1.1);
+    transform: scale(1.8);
     border-color: rgb(255, 41, 51);
     box-shadow: 0 0 1rem rgb(255, 41, 51);
   }

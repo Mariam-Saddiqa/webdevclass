@@ -1,18 +1,16 @@
-//const keys=document.querySelector('keys');
-let audio=document.querySelectorAll('audio');
-function playAudio(key){
-    audio.forEach(audio=>{
-        let audioKey=audio.getAttribute('data-key');
-        if(audioKey==key){
-            audio.play();
-        }
+window.addEventListener('keydown', function(e){
+
+    //select corresponding audio
+    const audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`)
+    //select corresponding key
+    const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`)
+
+    if (!audio){
+      return //stop the function from running all together
     }
-        )
-}
-document.querySelectorAll('.key').forEach(btn=>{
-    let audioKey=btn.getAttribute('data-key');
-    btn.addEventListener('clcik',function(e){
-        console.log(e.target.parentElement)
-        playAudio(audioKey);
-    })
-})
+    audio.currentTime = 0 // rewind to the start
+    audio.play()
+    key.classList.add('playing')
+    
+  })
+
