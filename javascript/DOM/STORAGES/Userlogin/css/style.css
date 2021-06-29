@@ -9,3 +9,27 @@
     background-size: cover;
     background-position:100% ;
 }
+.card{
+    background-color: transparent !important;
+    border-color: white;
+}
+.btn{
+    width: 100%;
+    background-color: transparent;
+}
+
+.btn:hover{
+    width: 100%;
+    background-color: transparent;
+}
+.btn:active{
+    width: 100%;
+    background-color: transparent;
+}
+.fa-lock{
+    font-size: 2rem !important;
+}
+.input{
+    background-color:#ffffff54 !important;
+    color:#ffffff54 !important;
+}
