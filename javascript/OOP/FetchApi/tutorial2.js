@@ -16,7 +16,7 @@ let button=document.querySelector('button').addEventListener('click',e=>{
 function getUserName(arr){
     
         let newarry=arr.filter(user=>{
-             return user.city="McKenziehaven";
+             return user.city=="McKenziehaven";
             
         })
         console.log(newarry)
