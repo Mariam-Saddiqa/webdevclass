@@ -9,10 +9,10 @@
     console.log(data)
 })*/
 
-
+let output=document.querySelector('#output')
 async function getAllComments(){
     let res = await fetch("https://jsonplaceholder.typicode.com/comments")
-    return res.json;
+    return res.json();
 }
 
 /*getAllComments()
@@ -23,7 +23,8 @@ async function getAllComments(){
 
 function readComment (arr){
     arr.forEach(comment=>{
-        console.log(comment)
+        //console.log(comment)
+        output.innerHTML+=`<p>${comment.name}</p>\n`
     });
 }
 document.querySelector('button').addEventListener('click',e=>{
