@@ -21,15 +21,19 @@ function getUserName(arr){
 
     nArr.forEach(user => {
          let p=document.createElement('p') 
-         p.innerHTML+=`${user.name}\n`
-         output.appendChild(p)
-         p.addEventListener('click',showModal)
+         p.innerHTML+=`${user.name}`
+         output.appendChild(p);
+         
     })
 }
 
-function showModal(){
-    
-}
+/*function showModal(user){
+    let modal=document.createElement('div');
+    modal.className="modal-body";
+    modal.textContent+=user;
+    body.appendChild(modal);
+
+}*/
 
 
 
