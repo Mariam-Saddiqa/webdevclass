@@ -3,12 +3,9 @@ const btn=document.querySelector('.submit')
 const searchCity=document.querySelector('#input')
 const description=document.querySelector('.description')
 const table=document.querySelector('table')
-const rowP=table.getElementsByTagName('tr')[0];
-const pressure=rowP.getElementsByTagName('td')[1];
-const rowH=table.getElementsByTagName('tr')[1];
-const humidity=rowH.getElementsByTagName('td')[1];
-const rowW=table.getElementsByTagName('tr')[2];
-const wind=rowW.getElementsByTagName('td')[1];
+const pressure=table.children[0].children[0].children[1];
+const humidity=table.children[0].children[1].children[1];
+const wind=table.children[0].children[2].children[1]
 const temprature=document.querySelector('.temp');
 
 
