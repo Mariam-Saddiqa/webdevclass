@@ -44,8 +44,3 @@ function getTemp(data){
     return c;
 }
 
-//C = K - 273.15
-
-/*t = document.getElementById("table"), // This have to be the ID of your table, not the tag
-    d = t.getElementsByTagName("tr")[0],
-    r = d.getElementsByTagName("td")[0];*/
