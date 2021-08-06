@@ -3,27 +3,37 @@ body {
   padding: 40px;
   font-family: "Mukta", Arial, sans-serif;
   font-size: 18px;
-  color: #333;
-  background-color: #F4F8FA;
+  color:white;
+  background-color:whitesmoke;
+  
 }
 
 hr {
-  border-top: 1px solid #E0E0E0;
+  border-top: 1px solid white;
 }
 
 p {
   margin: 4px 0;
+  
+}
+h1{
+  color: white;
+}
+button._edit img{
+  color:#D7D7D7
 }
 
 p.description {
   font-size: 27px;
+  color: #D7D7D7;
+  
 }
 
 .date {
   margin: 8px 0;
   font-weight: 700;
   font-size: 15px;
-  color: #777;
+  color:greenyellow;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -34,12 +44,14 @@ div.card {
   width: fit-content;
   border: 1px solid #D7D7D7;
   border-radius: 15px;
-  background: #FFF;
+  background-color:rgb(47, 46, 49);
+  
 }
 
 div.numbers div {
   display: inline-block;
   vertical-align: middle;
+  color: #D7D7D7;
 }
 div.numbers .temp {
   font-weight: 300;
@@ -58,15 +70,17 @@ div.numbers .measurements tr {
 }
 div.numbers .measurements .label {
   width: 100px;
-  color: #777;
+  color:whitesmoke;
 }
 
-div.hourly div {
+div.hour div {
   display: inline-block;
   width: 80px;
   text-align: center;
+  color: #DDD;
+  
 }
-div.hourly img {
+div.hour img {
   width: 80px;
 }
 
@@ -118,9 +132,70 @@ div.search div.search-results {
 }
 div.search div.search-results li {
   padding: 16px 16px;
+  
 }
 div.search div.search-results li:hover {
   cursor: pointer;
   background: #EC6E4C;
   color: #FFF;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+div.hour div {
+  display: inline-block;
+  vertical-align: middle;
+}
+div.hour .temp {
+  font-weight: 300;
+  font-size: 30px;
+}
+div.hour .temp .unit {
+  font-weight: 700;
+  font-size: 40px;
+  vertical-align: super;
+}
+div.hour .icon > img {
+  width: 120px;
+}
+div.hour .measurements tr {
+  height: 30px;
+}
+div.hour .measurements .label {
+  width: 100px;
+  color: #777;
+}
+
+.list-group{
+  height: 50vh !important;
+  overflow-y: auto;
 }

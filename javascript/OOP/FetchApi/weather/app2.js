@@ -1,7 +1,7 @@
 const _editIcon = document.querySelector("._edit");
 const cityName = document.querySelector(".city");
 const searchBody = document.querySelector(".search");
-const hour=document.querySelector('.hourly')
+const hour=document.querySelector('.hour')
 const hour_9=hour.children[0].children[0];
 const hour_12=hour.children[1].children[0];
 const hour_15=hour.children[2].children[0];
