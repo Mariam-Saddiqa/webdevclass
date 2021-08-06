@@ -57,7 +57,7 @@ datadelete.addEventListener('click',e=>{
     e.preventDefault();
     fetch(`${api}/5`,{
         method:'DELETE'
-    });then(res=>{
+    }).then(res=>{
         console.log(res)
     })
 })

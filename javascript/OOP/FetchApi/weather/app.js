@@ -7,6 +7,7 @@ const pressure=table.children[0].children[0].children[1];
 const humidity=table.children[0].children[1].children[1];
 const wind=table.children[0].children[2].children[1]
 const temprature=document.querySelector('.temp');
+const icon=document.querySelector('.icon').children[0];
 
 
 
@@ -32,15 +33,20 @@ btn.addEventListener('click',e=>{
             humidity.innerHTML=res.main.humidity;
             wind.innerHTML=res.wind.speed;
             let temp=res.main.temp;
-    temprature.childNodes[1].innerHTML=getTemp(temp);
+            temprature.childNodes[1].innerHTML=getTemp(temp);
+           let iconid=res.weather[0].icon;
+           icon.src="https://openweathermap.org/img/wn/"+iconid+"@2x.png"
+           document.body.style.backgroundImage="url('https://www.google.com/search?q= "+ searchCity + "bm=isch&ved=2ahUKEwiU9vz5g5ryAhUWybsIHVqXAHsQ2-cCegQIABAA&oq=tokyo&gs_lcp=CgNpbWcQAzIECAAQQzIHCAAQsQMQQzIHCAAQsQMQQzIICAAQgAQQsQMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEEMyBQgAEIAEMgQIABBDOgQIIxAnOgcIIxDqAhAnUIqvA1i21ANgzdcDaAFwAHgCgAFiiAG1EJIBAjMwmAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=Z-0LYdSmGZaS7_UP2q6C2Ac&bih=1274&biw=1186&prmd=isnv')"
+           //icon.innerHTML=`<img src="icons/${iconElement}.png"/>`&t
         })
     }
 })
+
 
 function getTemp(data){
     let c;
     let k=data;
     c=k-273;
-    return c;
+    return Math.trunc((c));
 }
 
