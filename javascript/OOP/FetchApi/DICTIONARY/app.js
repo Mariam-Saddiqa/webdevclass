@@ -24,8 +24,7 @@ fetch(api_key)
     document.querySelector('.pronunciation-text').innerHTML=data[0].phonetics[0].text;
     document.querySelector('.definition').children[0].innerHTML=data[0].meanings[0].definitions[0].definition;
     document.querySelector('.example').innerHTML=data[0].meanings[0].definitions[0].example
-    let mp3_link=data[0].phonetics[0].audio
-    console.log(audio)
+    let mp3_link=data[0].phonetics[0].audio;
     audio.addEventListener('click',data=>{
         
         var audio = new Audio(mp3_link);
