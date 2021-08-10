@@ -28,13 +28,13 @@ btn.addEventListener('click',e=>{
         .then(res=>{
             console.log(res)
             city.innerHTML=res.name;
-            description.innerHTML=res.weather[0].description;
+            description.innerHTML=res.weather.description;
             pressure.innerHTML=res.main.pressure;
             humidity.innerHTML=res.main.humidity;
             wind.innerHTML=res.wind.speed;
             let temp=res.main.temp;
             temprature.childNodes[1].innerHTML=getTemp(temp);
-           let iconid=res.weather[0].icon;
+           let iconid=res.weather.icon;
            icon.src="https://openweathermap.org/img/wn/"+iconid+"@2x.png"
            document.body.style.backgroundImage="url('https://www.google.com/search?q= "+ searchCity + "bm=isch&ved=2ahUKEwiU9vz5g5ryAhUWybsIHVqXAHsQ2-cCegQIABAA&oq=tokyo&gs_lcp=CgNpbWcQAzIECAAQQzIHCAAQsQMQQzIHCAAQsQMQQzIICAAQgAQQsQMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEEMyBQgAEIAEMgQIABBDOgQIIxAnOgcIIxDqAhAnUIqvA1i21ANgzdcDaAFwAHgCgAFiiAG1EJIBAjMwmAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=Z-0LYdSmGZaS7_UP2q6C2Ac&bih=1274&biw=1186&prmd=isnv')"
            //icon.innerHTML=`<img src="icons/${iconElement}.png"/>`&t
